@@ -1,9 +1,8 @@
 ---
 home: true
-heroImage: /egg.png
-heroText: vuepress
-tagline: 
-actionText: 马上进入 →
+bgImage: '/bgp.jpg'
+tagline: wild wild web
+actionText: Enter →
 actionLink: /pages/folder1/test1.md
 features:
 - title: 简洁至上

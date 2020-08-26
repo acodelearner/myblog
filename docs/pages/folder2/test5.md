@@ -1,3 +1,11 @@
+---
+title: nginx一键配置
+date: 2017-12-28
+categories:
+ - frontEnd
+tags:
+ - nginx
+---
 ## nginx一键配置
 https://nginxconfig.io/
 ```  js{4}
