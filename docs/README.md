@@ -1,7 +1,7 @@
 ---
 home: true
 bgImage: '/bgp.jpg'
-tagline: doramifasolaxi
+tagline: wild wild web
 actionText: Enter →
 actionLink: /pages/folder1/test1.md
 features:
