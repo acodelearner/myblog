@@ -1,7 +1,7 @@
 ---
 home: true
 bgImage: '/bgp.jpg'
-tagline: wild wild web
+tagline: 不会画画的厨师不是好码农
 actionText: Enter →
 actionLink: /pages/folder1/test1.md
 features:
