@@ -15,49 +15,53 @@ module.exports = {
         logo: '/boy.png',                                                                               
         lastUpdated: 'lastUpdate', // string | boolean
         nav: [
-            { text: 'home', link: '/', icon: 'reco-home' },
-            {
-                text: 'other',
-                ariaLabel: '分类',
-                items: [
-                    { text: 'game', link: '/pages/folder1/test1.md' },
-                    { text: 'life', link: '/pages/folder2/test4.md' },
-                ]
-            },
-            { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
-            { text: 'Github', link: 'https://github.com/acodelearner' },
+            { text: '首页', link: '/', icon: 'reco-home' },
+            { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
+            { text: 'Github', link: 'https://github.com/acodelearner', icon: 'reco-github' },
         ],
         // 自动形成侧边导航
         subSidebar: 'auto',
+        
         sidebarDepth: 4, 
         sidebar: {
-            '/pages/folder1/':[
+            '/pages/frontend/':[
                 {
-                    title: '测试菜单1',   // 必要的
+                    title: '前端',   // 必要的
                     collapsable: true, // 可选的, 默认值是 true,
                     sidebarDepth: 1,    // 可选的, 默认值是 1
                     children: [
-                        ['test1.md', '子菜单1'],
-                        ['test3.md', '子菜单2']
                     ]
                 },
+            ],  
+            '/pages/linux/':[
+              {
+                  title: 'linux',   // 必要的
+                  collapsable: true, // 可选的, 默认值是 true,
+                  sidebarDepth: 1,    // 可选的, 默认值是 1
+                  children: [
+                      ['centos.md', '网站上线流程'],
+                  ]
+              },
+          ],  
+            '/pages/game/':[
                 {
-                    title: '测试菜单2',
+                    title: '后端',
                     collapsable: true, // 可选的, 默认值是 true,
                     children: [
-                        ['test2.md', '子菜单1']
+                        ['test4.md', '子菜单4'],
+                        ['test5.md', '子菜单5'],
                     ]
                 }
-            ],
+            ]
         },
         blogConfig: {
           category: {
             location: 2,     // 在导航栏菜单中所占的位置，默认2
-            text: 'Category' // 默认文案 “分类”
+            text: '分类' // 默认文案 “分类”
           },
           tag: {
             location: 3,     // 在导航栏菜单中所占的位置，默认3
-            text: 'Tag'      // 默认文案 “标签”
+            text: '标签'      // 默认文案 “标签”
           }
         },
         friendLink: [
@@ -80,7 +84,7 @@ module.exports = {
     
     //*******
     title: 'Zain', // 显示在左上角的网页名称以及首页在浏览器标签显示的title名称
-    description: 'hzy的个人小站', // meta 中的描述文字，用于SEO
+    description: 'code and life', // meta 中的描述文字，用于SEO
     // 注入到当前页面的 HTML <head> 中的标签
     head: [
         ['link', { rel: 'icon', href: '/egg.png' }],  //浏览器的标签栏的网页图标

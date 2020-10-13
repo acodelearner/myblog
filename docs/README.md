@@ -3,7 +3,7 @@ home: true
 bgImage: '/bgp.jpg'
 tagline: wild wild web
 actionText: Enter →
-actionLink: /pages/folder1/test1.md
+# actionLink: /pages/folder1/test1.md
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
