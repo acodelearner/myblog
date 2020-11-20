@@ -8,12 +8,14 @@
  */
 module.exports = {
   plugins: [
+    //看板娘
     [
       '@vuepress-reco/vuepress-plugin-kan-ban-niang',
       {
         theme:['z16', 'haru1', 'haru2', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku']
       }
     ],
+    //title
     [
       "dynamic-title",
       {
@@ -24,14 +26,16 @@ module.exports = {
         recoverTime: 2000
       }
     ],
+    //背景丝带
     [
       "ribbon",
       {
         size: 90,     // width of the ribbon, default: 90
-        opacity: 0.8, // opacity of the ribbon, default: 0.3
+        opacity: 0.3, // opacity of the ribbon, default: 0.3
         zIndex: -1    // z-index property of the background, default: -1
       }
     ],
+    //点击效果
     [
       "cursor-effects"
     ]
@@ -62,7 +66,10 @@ module.exports = {
           title: '前端', // 必要的
           collapsable: true, // 可选的, 默认值是 true,
           sidebarDepth: 1, // 可选的, 默认值是 1
-          children: [],
+          children: [
+            ['nodeJWT.md', '初次接触JWT——加密用户信息'],
+            ['koa2Build.md', 'koa2项目创建与目录结构']
+          ],
         },
       ],
       '/pages/linux/': [
@@ -71,21 +78,21 @@ module.exports = {
           collapsable: true, // 可选的, 默认值是 true,
           sidebarDepth: 1, // 可选的, 默认值是 1
           children: [
-            ['mcServer.md', '云服务器搭建MC我的世界服务器'],
-            ['centos.md', '网站上线流程'],
+            ['centos.md', '网站上线与jenkins自动化部署'],
+            ['mcServer.md', '云服务器搭建MC我的世界服务器']
           ],
         },
       ],
-      '/pages/game/': [
-        {
-          title: '后端',
-          collapsable: true, // 可选的, 默认值是 true,
-          children: [
-            ['test4.md', '子菜单4'],
-            ['test5.md', '子菜单5'],
-          ],
-        },
-      ],
+      // '/pages/game/': [
+      //   {
+      //     title: '游戏',
+      //     collapsable: true, // 可选的, 默认值是 true,
+      //     children: [
+      //       ['test4.md', '子菜单4'],
+      //       ['test5.md', '子菜单5'],
+      //     ],
+      //   },
+      // ],
     },
     blogConfig: {
       category: {
