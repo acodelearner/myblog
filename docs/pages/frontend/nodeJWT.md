@@ -112,7 +112,7 @@ router.post('/login', async (ctx, next) => {
 })
 ```
 通过Postman请求成功，看到返回的数据已经被加密了  
-![登录加密](/frontend/nodeJWT/loginjwt.png)  
+![登录加密](/frontend/nodeJWT/log.png)  
 **4.获取加密内容**  
 成功加密后，每次向服务端发送请求，都需要带上密钥和登录时返回的加密信息  
 在第3步中模拟登录的路由代码下面，新增一个接口尝试获取加密的信息
