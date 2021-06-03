@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-21 09:22:49
- * @LastEditTime: 2020-08-26 15:11:59
+ * @LastEditTime: 2021-06-03 16:52:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vuepress-master\docs\.vuepress\config.js
@@ -79,7 +79,8 @@ module.exports = {
           sidebarDepth: 1, // 可选的, 默认值是 1
           children: [
             ['centos.md', '网站上线与jenkins自动化部署'],
-            ['mcServer.md', '云服务器搭建MC我的世界服务器']
+            ['mcServer.md', '云服务器搭建MC我的世界服务器'],
+            ['cpuLoad.md', '云服务器被木马攻击导致CPU负载过高']
           ],
         },
       ],
